@@ -1,0 +1,65 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.28803.452
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{2E579423-C9B4-49BE-B6E6-9EB2B7CA10EA}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{E7345A6C-60C7-40E6-9E03-86D81E5A31E6}"
+	ProjectSection(SolutionItems) = preProject
+		nuget.config = nuget.config
+	EndProjectSection
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AutoTestMate.NUnit.Infrastructure.IntegrationTests", "AutoTestMate.NUnit.Infrastructure.IntegrationTests\AutoTestMate.NUnit.Infrastructure.IntegrationTests.csproj", "{943C9870-DDC3-46CE-B173-4748A271E5B6}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AutoTestMate.NUnit.Infrastructure.UnitTests", "AutoTestMate.NUnit.Infrastructure.UnitTests\AutoTestMate.NUnit.Infrastructure.UnitTests.csproj", "{3366D5CA-C437-4394-AA08-34B69B384F8C}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AutoTestMate.NUnit.Infrastructure", "AutoTestMate.NUnit.Infrastructure\AutoTestMate.NUnit.Infrastructure.csproj", "{8613F4A5-6DE9-4AF5-954D-C8FB4814BD18}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AutoTestMate.NUnit.Services", "AutoTestMate.NUnit.Services\AutoTestMate.NUnit.Services.csproj", "{199FABFB-FE6C-4CB5-80B7-3B558044249C}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AutoTestMate.NUnit.Web", "AutoTestMate.NUnit.Web\AutoTestMate.NUnit.Web.csproj", "{D5F8648C-86B1-4EF7-BC15-DB6851EBB56E}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{55DDB412-F73D-4591-9717-6B3DEF3A9D72}"
+	ProjectSection(SolutionItems) = preProject
+		Test.runsettings = Test.runsettings
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{943C9870-DDC3-46CE-B173-4748A271E5B6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{943C9870-DDC3-46CE-B173-4748A271E5B6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{943C9870-DDC3-46CE-B173-4748A271E5B6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{943C9870-DDC3-46CE-B173-4748A271E5B6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3366D5CA-C437-4394-AA08-34B69B384F8C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3366D5CA-C437-4394-AA08-34B69B384F8C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3366D5CA-C437-4394-AA08-34B69B384F8C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3366D5CA-C437-4394-AA08-34B69B384F8C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8613F4A5-6DE9-4AF5-954D-C8FB4814BD18}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8613F4A5-6DE9-4AF5-954D-C8FB4814BD18}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8613F4A5-6DE9-4AF5-954D-C8FB4814BD18}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8613F4A5-6DE9-4AF5-954D-C8FB4814BD18}.Release|Any CPU.Build.0 = Release|Any CPU
+		{199FABFB-FE6C-4CB5-80B7-3B558044249C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{199FABFB-FE6C-4CB5-80B7-3B558044249C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{199FABFB-FE6C-4CB5-80B7-3B558044249C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{199FABFB-FE6C-4CB5-80B7-3B558044249C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D5F8648C-86B1-4EF7-BC15-DB6851EBB56E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D5F8648C-86B1-4EF7-BC15-DB6851EBB56E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D5F8648C-86B1-4EF7-BC15-DB6851EBB56E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D5F8648C-86B1-4EF7-BC15-DB6851EBB56E}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{943C9870-DDC3-46CE-B173-4748A271E5B6} = {2E579423-C9B4-49BE-B6E6-9EB2B7CA10EA}
+		{3366D5CA-C437-4394-AA08-34B69B384F8C} = {2E579423-C9B4-49BE-B6E6-9EB2B7CA10EA}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {2240BE5C-C7EA-4195-9443-A6E63B9B6FCA}
+	EndGlobalSection
+EndGlobal

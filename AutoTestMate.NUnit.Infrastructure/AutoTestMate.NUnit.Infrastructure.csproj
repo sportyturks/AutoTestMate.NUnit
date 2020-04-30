@@ -1,0 +1,53 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.1</TargetFramework>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <Version>1.0.01</Version>
+    <RootNamespace>AutoTestMate.NUnit.Infrastructure</RootNamespace>
+    <AssemblyName>AutoTestMate.NUnit.Infrastructure</AssemblyName>
+  </PropertyGroup>
+
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <Prefer32bit>false</Prefer32bit>
+  </PropertyGroup>
+
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <Prefer32bit>false</Prefer32bit>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Helpers\MQ\**" />
+    <EmbeddedResource Remove="Helpers\MQ\**" />
+    <None Remove="Helpers\MQ\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Remove="Attributes\ExcelDynamicDataAttribute.cs" />
+    <Compile Remove="Attributes\ExcelTestDataAttribute.cs" />
+    <Compile Remove="Extensions\AssertExtensions.cs" />
+    <Compile Remove="Extensions\ListExtensions.cs" />
+    <Compile Remove="Extensions\ReflectionExtensions.cs" />
+    <Compile Remove="Extensions\XmlExtensions.cs" />
+    <Compile Remove="Helpers\ABNHelper.cs" />
+    <Compile Remove="Helpers\ACNHelper.cs" />
+    <Compile Remove="Helpers\CrnHelper.cs" />
+    <Compile Remove="Helpers\ExcelHelper.cs" />
+    <Compile Remove="Helpers\Global.cs" />
+    <Compile Remove="Helpers\GnafHelper.cs" />
+    <Compile Remove="Helpers\ManipulateLongUserids.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Castle.Windsor" Version="5.0.1" />
+    <PackageReference Include="ClosedXML" Version="0.95.0" />
+    <PackageReference Include="DocumentFormat.OpenXml" Version="2.10.1" />
+    <PackageReference Include="Microsoft.Extensions.Caching.Memory" Version="3.1.3" />
+    <PackageReference Include="NLog" Version="4.7.0" />
+    <PackageReference Include="NUnit" Version="3.12.0" />
+    <PackageReference Include="System.Data.Common" Version="4.3.0" />
+    <PackageReference Include="System.Data.DataSetExtensions" Version="4.6.0-preview3.19128.7" />
+    <PackageReference Include="System.Data.Odbc" Version="4.7.0" />
+  </ItemGroup>
+
+</Project>

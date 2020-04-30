@@ -1,0 +1,49 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+
+<RunSettings>
+  <!-- Configurations that affect the Test Framework -->
+  <RunConfiguration>
+    <!-- Path relative to solution directory -->
+    <ResultsDirectory>.\TestResults</ResultsDirectory>
+  </RunConfiguration>
+
+  <TestRunParameters>
+    <Parameter name="LogLevel" value="Debug" />
+    <Parameter name="LogName" value="WebTest" />
+    <Parameter name="BaseUrl" value="https://www.google.com" />
+    <Parameter name="DriverServerLocation" value="" />
+    <Parameter name="Timeout" value="10" />
+    <Parameter name="OutputFileDirectory" value="\TestResults\" />
+    <Parameter name="OutputFileScreenshotsDirectory" value="\TestResults\ScreenshotsDirectory\" />
+    <Parameter name="LoginWaitTime" value="1" />
+    <Parameter name="NavigateToBasePage" value="false" />
+    <Parameter name="ForceKillProcess" value="true" />
+    <Parameter name="Headless" value="false" />
+    <Parameter name="BrowserType" value="chrome" />
+    <Parameter name="BrowserProfile" value="default" />
+    <Parameter name="EnableDetailedLogging" value="false" />
+  </TestRunParameters>
+  
+  <!-- NUnit3 adapter, uncomment to set as appropriate, numeric, booleans, enums have their default values below, except RandomSeed -->
+  <!--
+    <NUnit>
+        <BasePath>D:\Dev\NUnit\nunit3-vs-adapter\demo\NUnitTestDemo\bin\Release</BasePath>
+        <PrivateBinPath>extras;more.extras</PrivateBinPath>
+        <DefaultTimeout>0</DefaultTimeout>
+        <WorkDirectory>work</WorkDirectory>
+        <InternalTraceLevel>Off</InternalTraceLevel>
+        <RandomSeed>1234567</RandomSeed>  
+        <NumberOfTestWorkers>-1</NumberOfTestWorkers>
+        <Verbosity>0</Verbosity>
+        <UseVsKeepEngineRunning>false</UseVsKeepEngineRunning>
+        <ShadowCopyFiles>false</ShadowCopyFiles>
+        <DefaultTestNamePattern>{m}{a}</DefaultTestNamePattern>
+    </NUnit>
+    -->
+
+  <NUnit>
+    <Verbosity>5</Verbosity>
+    <DumpXmlTestResults>true</DumpXmlTestResults>
+    <DumpXmlTestDiscovery>true</DumpXmlTestDiscovery>
+  </NUnit>
+</RunSettings>

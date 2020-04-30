@@ -1,0 +1,17 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+
+    <IsPackable>false</IsPackable>
+
+    <AssemblyName>AutoTestMate.NUnit.Infrastructure.UnitTests</AssemblyName>
+
+    <RootNamespace>AutoTestMate.NUnit.Infrastructure.UnitTests</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\AutoTestMate.NUnit.Infrastructure\AutoTestMate.NUnit.Infrastructure.csproj" />
+  </ItemGroup>
+
+</Project>
